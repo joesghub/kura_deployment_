@@ -18,7 +18,7 @@ A Retail Bank wants to deploy an application to the cloud that is fully managed 
 
 ### Security Groups
 
-> [!SAFETY FIRST]  
+> [!CAUTION]  
 >In creating our instance, we need to ensure only the proper entities can access our application and environments.
 
 1. **The VPC that you’re launching your instance into must have an internet gateway attached to it. (Automatically setup)**
@@ -129,7 +129,7 @@ These steps collectively prepare the system to install Jenkins and ensure that t
 
 ### IAM Security Roles 
 
-> [!SAFETY FIRST]  
+> [!CAUTION]  
 > In AWS Elastic Beanstalk, we will be using **IAM (Identity and Access Management) roles**.
 
 > An IAM role is an IAM identity that you can create in your account that has specific permissions. An IAM role is similar to an IAM user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS.[^2]
@@ -170,10 +170,10 @@ These steps collectively prepare the system to install Jenkins and ensure that t
 
 3. **Choose "Python 3.7" as the "Managed platform". In `Application Code` choose "Upload your code" and upload your zipped application files with the "local file" option. ** 
 
-> [!NOTE]  
+> [!TIP]  
 >When you create a ZIP file in Mac OS X Finder or Windows Explorer, make sure you zip the files and subfolders themselves, rather than zipping the parent folder.
-1. Open your top-level project folder and select all the files and subfolders within it. Do not select the top-level folder itself.
-2. Right-click the selected files, and then choose Compress X items, where X is the number of files and subfolders you've selected. [^4]
+>1. Open your top-level project folder and select all the files and subfolders within it. Do not select the top-level folder itself.
+>2. Right-click the selected files, and then choose Compress X items, where X is the number of files and subfolders you've selected. [^4]
 
 [^4]: [Create an application source bundle](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-sourcebundle.html)
 
