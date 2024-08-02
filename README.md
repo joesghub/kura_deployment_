@@ -211,7 +211,7 @@ At first, I misunderstood the relationship between EC2, Jenkins, Github, and Bea
 
 My first step towards the solution was identifying the true nature of my system's design. While I thought Jenkins was responsible for uploading updated versions of the repository to Beanstalk, in reality it was me! 
 
-Jenkins does test and integrate new versions of code added to the paired repository. Elastic Beanstalk does automatically deploy new versions of the repository you add. With this improve dunderstanding I decided to focus on Elastic Beanstalk as Jenkins ran successful tests on my repository. 
+Jenkins does test and integrate new versions of code added to the paired repository. Elastic Beanstalk does automatically deploy new versions of the repository you add. With this improved understanding I decided to focus on Elastic Beanstalk as Jenkins ran successful tests on my repository. 
 
 My environment had `Green` health and persisted over multiple days, so I honed further in on what code was being deployed. When I added my local file to EBS, I uploaded the `.zip` download from my Github repository. That `.zip` file was the *Parent Folder*, containing all the files, zipped. 
 
