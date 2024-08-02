@@ -69,7 +69,7 @@ A Retail Bank wants to deploy an application to the cloud that is fully managed 
 These steps collectively prepare the system to install Jenkins and ensure that the necessary dependencies (Java, Python 3.7, etc.) are in place.
 
 
-### Full Jenkins Installation Code:
+### Setup Jenkins Installation Code
 ```bash
     $sudo apt update && sudo apt install fontconfig openjdk-17-jre software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt install python3.7 python3.7-venv
     $sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
@@ -124,7 +124,7 @@ These steps collectively prepare the system to install Jenkins and ensure that t
 
 ![Jenkins Scan Repository Log](https://github.com/joesghub/kura_deployment_1/blob/main/Screenshots/Jenkins%20Scan%20Repository%20Log.png?raw=true)
 
-## Deploying our Application on AWS Elastic Beanstalk
+## Deploying your Application on AWS Elastic Beanstalk
 
 
 ### IAM Security Roles 
